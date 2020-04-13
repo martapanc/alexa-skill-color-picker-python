@@ -3,7 +3,7 @@ version = 0.1
 [default.deploy]
 [default.deploy.parameters]
 stack_name = "color-expert"
-s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-1qdvy08gcc0q0"
+s3_bucket = "aws-sam-cli-managed-default-samclisourcebucket-k9u68xccnypw"
 s3_prefix = "color-expert"
 region = "eu-west-2"
 confirm_changeset = true
