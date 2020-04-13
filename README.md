@@ -19,5 +19,10 @@ sam --version
 ```bash
 sam build
 sam deploy --guided
+sam local invoke -e testEvent.json
 ```
 Once deployed, the ARN code (AWS console > Lambda > Functions > Color picker function > top right corner) needs to be copied and pasted in the Alexa Skill endpoint page.
+
+### Run locally in PyCharm using testEvent.json
+- PyCharm should detect a Lambda run configuration - if it doesn't, create one 
+- Select testEvent.json as Input file
