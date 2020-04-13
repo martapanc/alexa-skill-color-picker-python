@@ -1,7 +1,7 @@
 {
     "interactionModel": {
         "languageModel": {
-            "invocationName": "my color picker",
+            "invocationName": "my favourite colour",
             "intents": [
                 {
                     "name": "AMAZON.FallbackIntent",
@@ -23,14 +23,14 @@
                     "name": "WhatsMyColorIntent",
                     "slots": [],
                     "samples": [
-                        "tell me what is my favorite color",
-                        "whats my favorite color",
-                        "say my color",
-                        "say my favorite color",
-                        "tell me my favorite color",
-                        "what is my favorite color",
-                        "what is my color",
-                        "whats my color"
+                        "tell me what is my favourite colour",
+                        "whats my favourite colour",
+                        "say my colour",
+                        "say my favourite colour",
+                        "tell me my favourite colour",
+                        "what is my favourite colour",
+                        "what is my colour",
+                        "what's my colour"
                     ]
                 },
                 {
@@ -42,8 +42,8 @@
                         }
                     ],
                     "samples": [
-                        "My color is {Color}",
-                        "my favorite color is {Color}"
+                        "My colour is {Color}",
+                        "my favourite colour is {Color}"
                     ]
                 }
             ],

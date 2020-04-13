@@ -80,13 +80,13 @@ def set_color_in_session(intent, session):
     if 'Color' in intent['slots']:
         favorite_color = intent['slots']['Color']['value']
         session_attributes = create_favorite_color_attributes(favorite_color)
-        speech_output = "I now know your favorite color is " + favorite_color + \
-                        ". You can ask me your favorite color by saying, what's my favorite color?"
-        reprompt_text = "You can ask me your favorite color by saying, what's my favorite color?"
+        speech_output = "I now know your favourite colour is " + favorite_color + \
+                        ". You can ask me your favourite colour by saying, what's my favourite colour?"
+        reprompt_text = "You can ask me your favourite colour by saying, what's my favourite colour?"
     else:
-        speech_output = "I'm not sure what your favorite color is. Please try again."
-        reprompt_text = "I'm not sure what your favorite color is. You can tell me your favorite color by saying, " \
-                        "my favorite color is red."
+        speech_output = "I'm not sure what your favourite colour is. Please try again."
+        reprompt_text = "I'm not sure what your favourite colour is. You can tell me your favourite colour by saying, " \
+                        "my favourite colour is red."
     return build_response(session_attributes, build_speechlet_response(
         card_title, speech_output, reprompt_text, should_end_session))
 
@@ -97,12 +97,12 @@ def get_color_from_session(intent, session):
 
     if session.get('attributes', {}) and "favoriteColor" in session.get('attributes', {}):
         favorite_color = session['attributes']['favoriteColor']
-        speech_output = "Your favorite color is " + favorite_color + \
+        speech_output = "Your favourite colour is " + favorite_color + \
                         ". Goodbye."
         should_end_session = True
     else:
-        speech_output = "I'm not sure what your favorite color is. " \
-                        "You can say, my favorite color is red."
+        speech_output = "I'm not sure what your favourite colour is. " \
+                        "You can say, my favourite colour is red."
         should_end_session = False
 
     # Setting reprompt_text to None signifies that we do not want to reprompt the user. If the user does not respond
