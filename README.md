@@ -1,4 +1,4 @@
-# Alexa Skill - Fav Colour Picker
+# Alexa Skill - Fav Colour Picker :art:
 
 [Guide](https://github.com/alexa/skill-sample-python-colorpicker)
 
